@@ -1,0 +1,40 @@
+.bottom-navigation-main {
+    background-color: #0d1118 !important; /* Force apply background color */
+    border-radius: 20px !important; /* Rounded corners */
+    width: 30rem !important; /* Set the width of the bar */
+    margin: 0 auto !important; /* Center the bar horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Add shadow effect */
+    margin-bottom: 1rem !important;
+    transition: width .5s ease-in-out !important;
+    /* transition: padding-left 0.28s ease-in-out !important; */
+    overflow: hidden !important;
+    position: fixed;
+    bottom: 0;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+}
+
+.bottom-navigation-main:hover {
+    width: 33rem !important;
+    padding-left: 0.3rem !important;
+    
+}
+
+.bottom-navigation-main .MuiBottomNavigationAction-root {
+    color: #959698 !important; /* Icon color */
+}
+
+.bottom-navigation-main .MuiBottomNavigationAction-root:hover {
+    color: #eee5e5 !important; /* Change icon color on hover */
+}
+
+.bottom-navigation-main .Mui-selected {
+    color: white !important; /* Color for the selected icon */
+}
+.bottom-navigation-main .admin-icon{
+    
+    color: rgb(250, 250, 250) !important;
+}
+.dashboard-navbar{
+    position: fixed;
+}

@@ -1,0 +1,30 @@
+.list{
+    height: 4rem;
+    background-color: rgb(230, 204, 204);
+}
+.searchPic{
+    width: 3rem;
+}
+.search-close{
+   
+   /* position: relative; */
+   align-self: flex-end;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   right: 1rem;
+   padding: 1rem;
+   background-color: rgb(0, 0, 0);
+   color: white;
+   border-radius: 2rem;
+   width: 0.5rem;
+   font-size: 0.7rem;
+   height: 0.3rem;
+   margin-bottom: 0.7rem;
+}
+.search-close-btn-div{
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+    /* background-color: red; */
+}

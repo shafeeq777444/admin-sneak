@@ -1,0 +1,68 @@
+.user-details-modal-main-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.user-detail-moal-card {
+    color: black;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 0.3s ease-in-out; /* Add a fade-in effect */
+}
+
+.user-detail-modal-img {
+    width: 6rem; /* Increased image size for better visibility */
+    height: 6rem; /* Set height to maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-bottom: 1rem; /* Space below the image */
+}
+
+.user-order-modal-id,
+.user-order-modal-quantity,
+.user-order-modal-total-amount {
+    margin: 0.5rem 0; /* Add margin for spacing between items */
+}
+
+.close-button-use-details {
+    align-self: flex-end;
+    color: rgb(14, 0, 0);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 0rem; /* Space above the button */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.close-button-use-details:hover {
+    color: rgb(243, 0, 0);
+   
+}
+
+/* Animation keyframes for modal appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

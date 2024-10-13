@@ -1,0 +1,90 @@
+.profile-main{
+    
+    margin-top: 0.5rem;
+    position: fixed;
+    
+}
+.profile-close{
+    align-self: flex-end;
+    font-size: 0.8rem;
+}
+.profile-inner-main{
+    padding: 1.5rem 2rem 2.5rem 2rem;
+    gap:1.5rem;
+    font-size: .6rem;
+    border-radius: 3rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right:1rem;
+    width:15rem;
+    color: white;
+    text-align: center;
+}
+.profile-texts-div{
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+.profile-id{
+    font-weight: 300;
+    text-align: center;
+    color: rgb(172, 151, 151);
+}
+.profile-login{
+    margin-top: 0.5rem;
+    position: fixed;
+    right:1rem;
+    padding: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: .6rem;
+    border-radius: 3rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right:1rem;
+    width:5rem;
+    color: white;
+    text-align: center;
+}
+.profile-login:hover{
+    background-color: rgb(74, 22, 22);
+}
+.profile-login-close{
+    color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    position: fixed;
+    right:1rem;
+    z-index: 5;
+    font-size: 0.6rem;
+    
+}
+.profile-img{
+    width:5.5rem;
+}
+.profile-button{
+    padding: 0.3rem 2rem;
+    border-radius: 3rem;
+    color: rgb(22, 1, 1);
+    background-color: rgb(255, 255, 255);
+}
+.profile-button:hover{
+    background-color:rgb(172, 151, 151) ;
+    color: white;
+}
+
+@media (max-width:486){
+    .profile-inner-main{
+        width:1rem;
+    }
+    .profile-main{
+        width: 1rem;
+    }
+}

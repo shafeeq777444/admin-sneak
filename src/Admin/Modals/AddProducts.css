@@ -1,0 +1,91 @@
+.overlay-addproducts{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.696);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.addproduct-modal-main-div{
+    display: flex;
+    background-color: #0d1118;
+    color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    transform: scale(0.7);
+    
+   
+}
+
+.close-product-modal{
+    align-self: flex-end;
+    padding: 1px 10px;
+    font-size: 1.3rem;
+    color: rgb(137, 21, 21);;
+    border-radius: 1rem;
+    cursor: pointer;
+    opacity: 100;
+}
+.close-product-modal:hover{
+    
+    color: rgb(255, 255, 255);
+}
+.addproducts-Form{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0d1118;
+    
+}
+.product-field{
+     background-color: transparent; /*Transparent background */
+    border: none; /* Remove default border */
+    border-bottom: 2px solid #000; /* Add a single underline */
+     padding: 0.5rem; /*Optional padding for better spacing */
+    
+    color: #ffffff; /* Text color */
+    outline: none; /* Remove outline when focused */
+
+}
+.gender-div{
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    gap: 2rem;
+    padding-right: 2rem;
+}
+.div-product-code{
+    
+    padding: 2rem;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 2rem;
+
+}
+.div-product-submit{
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    align-self: flex-start;
+
+}
+.div-product-submit:hover{
+    background-color: #12161f;
+}
+.add-product-head{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 200;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

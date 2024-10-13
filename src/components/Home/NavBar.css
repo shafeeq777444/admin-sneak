@@ -1,0 +1,193 @@
+/* ......................................................... */
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --black-color: hsl(0, 0%, 5%);
+    --black-color-light: hsl(0, 0%, 70%);
+    --white-color: hsl(0, 0%, 100%);
+    --title-color: hsl(0, 0%, 5%);
+    --text-color: hsl(0, 0%, 55%);
+    --body-color: hsl(0, 0%, 96%);
+}
+
+
+/*===================== NavBar ===========================================================*/
+/*========== Large size ==========*/
+
+.search-div {
+    width: 6rem;
+    height: 1.35rem;
+    border: 1px solid var(--black-color-light);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 1rem;
+    padding-right: 0.5rem;
+}
+
+a {
+    color: var(--black-color-light);
+    font-size: 1rem;
+}
+
+.active-link {
+    color: var(--black-color);
+}
+
+.search-icon {
+    font-size: 0.7rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    padding: 3rem 16rem 3rem 16rem;
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    color: var(--black-color-light);
+}
+
+
+
+
+/* navlink */
+.active {
+    font: 500;
+    color: black;
+}
+
+.entire-nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: hsl(0, 0%, 96%);
+}
+
+.cart-icon {
+    width: 1.4rem;
+
+}
+.navbar-cart-main-div{
+    display: flex;
+}
+
+.navbar-cart-length{
+position: relative;
+    font-size: 0.8rem;
+    bottom: 0.3rem;
+    right: 0.2rem;
+    /* top:1.5rem; */
+    /* right: 1rem;  */
+    z-index: 2;
+}
+.nav-logo{
+    width:20rem
+}
+.user-icon {
+    width: 1.6rem;
+}
+.categories{
+    display: flex;
+    gap: 2rem;
+}
+.nav-right{
+    display: flex;
+    gap: 1rem;
+}
+
+/*========== Phone size ==========*/
+@media (max-width:768px) {
+    .logo{
+        width: 15rem;
+        margin-left: .3rem;
+        margin-top:.3rem;
+    }
+    .categories{
+        display: flex;
+        gap: 1rem;
+    }
+    .search-div {
+        width: 2rem;
+       
+        border: 1px solid var(--black-color-light);
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        border-radius: 1rem;
+        padding-right: 0.5rem;
+    }
+
+    a {
+        color: var(--black-color-light);
+        font-size: 0.7rem;
+    }
+
+    .active-link {
+        color: var(--black-color);
+    }
+
+    .search-icon {
+        font-size: 0.7rem;
+    }
+
+    header {
+        
+        gap: 0rem;
+        
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        align-items: center;
+        color: var(--black-color-light);
+
+
+    }
+
+    .search {
+        order: 1;
+    }
+
+    .women{
+        order: 2;
+    }
+    .men .popular {
+        order: 3;
+    }
+
+    .cart-icon {
+        width: 1rem;
+
+    }
+
+    .user-icon {
+        width: 1rem;
+    }
+
+    .navbar {
+        /* background-color: blue; */
+        display: flex;
+        gap: 0rem;
+        width: 100rem;
+        box-sizing: border-box;
+        transform: scale(0.9);
+        /* background-color: rebeccapurple; */
+
+    }
+}
+/* Add this to your NavBar.css */
+.transition-transform {
+    transition: transform 0.3s ease;
+}

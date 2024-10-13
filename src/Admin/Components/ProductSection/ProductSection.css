@@ -1,0 +1,125 @@
+.products-main-div {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.product-table-main-div {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.product-table {
+    color: white;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tr-heading {
+    background-color: #0d1118;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+}
+
+.td-button {
+    display: flex;
+    gap: 1rem;
+}
+
+.product-section-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+.images-product {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.td-products {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.tr-single-product {
+    background-color: #04060a;
+}
+
+.tr-single-product:hover {
+    background-color: #12161f;
+}
+
+th, td {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+th {
+    height: 5rem;
+}
+
+.button-div {
+    height: 8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.addProduct-button {
+    padding: 1rem;
+    background-color: #171b25;
+    color: white;
+    border-radius: 1rem;
+}
+
+.addProduct-button:hover {
+    background-color: #131312;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .product-table-main-div {
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    .product-table {
+        font-size: 0.8rem; /* Reduce font size for better readability */
+    }
+
+    .td-products {
+        flex-direction: column; /* Stack product info vertically */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .images-product {
+        gap: 0.5rem; /* Reduce gap between images */
+    }
+
+    .product-section-img {
+        width: 4rem; /* Decrease image size */
+        height: 4rem; /* Decrease image size */
+    }
+
+    .button-div {
+        margin-right: 1rem; /* Reduce margin on smaller screens */
+        justify-content: center; /* Center button */
+    }
+
+    .addProduct-button {
+        width: 100%; /* Make button full width */
+        margin: 0.5rem 0; /* Add vertical margin */
+    }
+
+    .td-button {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        gap: 0.5rem; /* Reduce gap between buttons */
+    }
+}

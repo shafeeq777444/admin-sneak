@@ -1,0 +1,14 @@
+.chart-main-div{
+    
+    margin-left: 15%;
+  
+}
+.total-sale{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:8rem;
+    height: 8rem;
+    background-color: brown;
+}

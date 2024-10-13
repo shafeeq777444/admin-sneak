@@ -1,0 +1,257 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "6427",
+      "name": "shafeeq mohamed",
+      "email": "shafeeqmohamed111@gmail.com",
+      "password": "12344321",
+      "cpassword": "12344321",
+      "cart": [
+        {
+          "id": "7",
+          "name": "Nike Air Dunk",
+          "Description": "Dunk Jump Model",
+          "price": 8549,
+          "oldPrice": 15000,
+          "pic": [
+            "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png",
+            "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png"
+          ],
+          "sex": "male",
+          "productCode": "NAD001",
+          "quantity": 2
+        }
+      ],
+      "whishlist": [],
+      "order": [
+        {
+          "phoneNumber": "8606777444",
+          "address": "kochampally",
+          "pincode": "676102",
+          "upiId": "1234",
+          "orderId": 1728744605161,
+          "items": [
+            {
+              "id": "7",
+              "name": "Nike Air Dunk",
+              "Description": "Dunk Jump Model",
+              "price": 8549,
+              "oldPrice": 15000,
+              "pic": [
+                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png",
+                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png"
+              ],
+              "sex": "male",
+              "productCode": "NAD001",
+              "quantity": 1
+            },
+            {
+              "name": "Nike Air Max",
+              "Description": "Max Jump Model",
+              "price": 7549,
+              "oldPrice": 13500,
+              "pic": [
+                "/assets/men/NIKE+AIR+MAX+ISHOD.png",
+                "/assets/men/NIKE+AIR+MAX+ISHOD.png"
+              ],
+              "sex": "male",
+              "productCode": "NAM001",
+              "id": "8",
+              "quantity": 1
+            }
+          ],
+          "totalPrice": "16098.00"
+        }
+      ],
+      "orderSummary": []
+    },
+    {
+      "id": "468d",
+      "name": "hisham",
+      "email": "hisham@gmail.com",
+      "password": "12345",
+      "cpassword": "12345",
+      "cart": [],
+      "whishlist": [],
+      "order": [
+        {
+          "phoneNumber": "8606777444",
+          "address": "kayal",
+          "pincode": "676199",
+          "upiId": "Qwe@123",
+          "orderId": 1728745946627,
+          "items": [
+            {
+              "id": "7",
+              "name": "Nike Air Dunk",
+              "Description": "Dunk Jump Model",
+              "price": 8549,
+              "oldPrice": 15000,
+              "pic": [
+                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png",
+                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png"
+              ],
+              "sex": "male",
+              "productCode": "NAD001",
+              "quantity": 1
+            }
+          ],
+          "totalPrice": "8549.00"
+        }
+      ],
+      "orderSummary": []
+    }
+  ],
+  "products": [
+    {
+      "name": "Air Max Dc",
+      "Description": "Max 2 Dc Edition",
+      "price": 11549,
+      "oldPrice": 15500,
+      "pic": [
+        "/assets/men/AIR+MAX+270.png",
+        "/assets/men/AIR+MAX+270.png"
+      ],
+      "sex": "male",
+      "productCode": "AMD001",
+      "id": "4"
+    },
+    {
+      "name": "Air Zoom",
+      "Description": "Spiridon 2 Cage",
+      "price": 18549,
+      "oldPrice": 23500,
+      "pic": [
+        "/assets/men/AIR+ZOOM+SPIRIDON+CAGE+2.png",
+        "/assets/men/AIR+ZOOM+SPIRIDON+CAGE+2.png"
+      ],
+      "sex": "male",
+      "productCode": "AZM002",
+      "id": "6"
+    },
+    {
+      "id": "7",
+      "name": "Nike Air Dunk",
+      "Description": "Dunk Jump Model",
+      "price": 8549,
+      "oldPrice": 15000,
+      "pic": [
+        "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png",
+        "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png"
+      ],
+      "sex": "male",
+      "productCode": "NAD001"
+    },
+    {
+      "name": "Nike Air Max",
+      "Description": "Max Jump Model",
+      "price": 7549,
+      "oldPrice": 13500,
+      "pic": [
+        "/assets/men/NIKE+AIR+MAX+ISHOD.png",
+        "/assets/men/NIKE+AIR+MAX+ISHOD.png"
+      ],
+      "sex": "male",
+      "productCode": "NAM001",
+      "id": "8"
+    },
+    {
+      "id": "9",
+      "name": "Nike Air Max",
+      "Description": "Max 1 Model",
+      "price": 5549,
+      "oldPrice": 11280,
+      "pic": [
+        "/assets/men/NIKE+AIR+MAX+1.png",
+        "/assets/men/NIKE+AIR+MAX+1.png"
+      ],
+      "sex": "male",
+      "productCode": "NAM002"
+    },
+    {
+      "id": "10",
+      "name": "Nike Waffle",
+      "Description": "Waffle Nav Nike",
+      "price": 2549,
+      "oldPrice": 8100,
+      "pic": [
+        "/assets/men/NIKE+WAFFLE+NAV.jpeg",
+        "/assets/men/NIKE+WAFFLE+NAV.jpeg"
+      ],
+      "sex": "male",
+      "productCode": "NWF001"
+    },
+    {
+      "name": "Nike Air Max",
+      "Description": "Air MAa Sc",
+      "price": 2549,
+      "oldPrice": 6700,
+      "pic": [
+        "/assets/men/NIKE+AIR+MAX+SC.png",
+        "/assets/men/NIKE+AIR+MAX+SC.png"
+      ],
+      "sex": "male",
+      "productCode": "NAM003",
+      "id": "11"
+    },
+    {
+      "id": "12",
+      "name": "Air Zoom",
+      "Description": "Gt Hustle 2",
+      "price": 25549,
+      "oldPrice": 29000,
+      "pic": [
+        "/assets/men/AIR+ZOOM+G.T.+HUSTLE+2+EP.png",
+        "/assets/men/AIR+ZOOM+G.T.+HUSTLE+2+EP.png"
+      ],
+      "sex": "male",
+      "productCode": "AZM003"
+    },
+    {
+      "id": "13",
+      "name": "Nike Air Max 90",
+      "Description": "Classic sneaker with cushioning",
+      "price": 9500,
+      "oldPrice": 12000,
+      "pic": [
+        "/assets/women/women:air_max_90.png",
+        "/assets/women/women:air_max_90.png"
+      ],
+      "sex": "female",
+      "productCode": "NAMW001"
+    },
+    {
+      "id": "15",
+      "name": "Nike React Infinity Run",
+      "Description": "Run longer, run safer",
+      "price": 11500,
+      "oldPrice": 15000,
+      "pic": [
+        "/assets/women/react_infinity_run.png",
+        "/assets/women/react_infinity_run.png"
+      ],
+      "sex": "female",
+      "productCode": "NRIW001"
+    },
+    {
+      "id": "16",
+      "name": "Nike Zoom Pegasus 37",
+      "Description": "The next generation of Pegasus",
+      "price": 9000,
+      "oldPrice": 13000,
+      "pic": [
+        "/assets/women/zoom_pegasus_37.png",
+        "/assets/women/zoom_pegasus_37.png"
+      ],
+      "sex": "female",
+      "productCode": "NZP001"
+    }
+  ]
+}
