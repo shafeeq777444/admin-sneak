@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ProductContext } from "../../../context/ProductContext";
 import "./ProductSection.css";
-import AddProduct from "../../Modals/AddProduct";
+import AddProduct from "../../Modals/AddProduct/AddProduct";
 
 const ProductSection = () => {
     const { allProducts, productModal, handleProductAddingModal, handleDeleteProduct, setEditableProduct } =

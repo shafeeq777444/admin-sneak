@@ -10,6 +10,12 @@
     align-items: center;
     z-index: 1000;
 }
+.user-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .user-detail-moal-card {
     color: black;
@@ -65,4 +71,16 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+.user-modal-main{
+    width: 100%;
+    display: flex;
+    background-color: red;
+}
+.user-order-data-head{
+    background-color: rgb(255, 255, 255);
+}
+.user-order-data-head:hover{
+    background-color: rgb(179, 176, 173);
+    
 }

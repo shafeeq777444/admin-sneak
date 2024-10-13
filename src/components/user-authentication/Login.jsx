@@ -22,7 +22,7 @@ const Login = () => {
       console.log(users);
       const user = users.find(u => u.email === values.email && u.password === values.password);
       if(user.role=="admin"){
-        localStorage.setItem("user", JSON.stringify(user));
+        
         navigate("/admin");
         window.location.reload()
 

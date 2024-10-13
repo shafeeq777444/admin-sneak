@@ -11,12 +11,13 @@ export const DashBoardProvider=({children})=>{
             try {
                 const response = await axios.get(`http://localhost:5001/users`);
                 const all=response.data;
+                // const admins=all.filter(user=>user==user.role)
                 const users=all.filter(user=>user.order&&Array.isArray(user.order))
                 // console.log(users,"checking");
                 const totalSale=users.reduce((acc,user)=>{return acc+user.order.reduce((accs,sorder)=>{return accs+parseFloat(sorder.totalPrice)},0)},0)
             //    console.log(totalSale,"final");
                 setTotalSale(totalSale)
-                
+
                
 
             } catch (err) {
@@ -30,8 +31,8 @@ details();
     return (
         <DashBoardContext.Provider
         value={{
-            totalSale
-
+            totalSale,
+          
         }}>{children}</DashBoardContext.Provider>
     )
 }

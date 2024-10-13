@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { createContext, useEffect, useState } from "react";
-import UserDetails from "../Admin/Modals/UserDetailsModal/UserDetails";
+import UserDetails from "../Admin/Modals/UserDetails/UserDetails";
 
 export const CartContext = createContext();
 export const CartProvider = ({ children }) => {
@@ -13,6 +13,20 @@ export const CartProvider = ({ children }) => {
     const [selectedUser, setSelectedUser] = useState(null);
     const [userOrderDetails, seUserOrderDetails] = useState(null);
     const [upiId, setUpiId] = useState("");
+    const [showOrderDetails,setShowOrderDetails]=useState(false);
+    const [selectedOrder,setSelectedOrder]=useState(null)
+// <=========== new ========================================>
+    const handleOrderClose=()=>{
+        setShowOrderDetails(false);
+    }
+    const handleOrderDetails=(order)=>{
+        setShowUserDetails(false);
+        setSelectedOrder(order);
+        setShowOrderDetails(true);
+
+    }
+    console.log(selectedOrder,"checking order");
+
     // <=========== after Upi payment products and details saved to order array of db =========>
 
     const orderedDetails = { ...userOrderDetails, upiId, orderId: Date.now(), items: [...cartItems],totalPrice:quantity.toFixed(2) };
@@ -139,7 +153,12 @@ export const CartProvider = ({ children }) => {
                 ordered,
                 upiId,
                 setUpiId,
-                clearCartItems
+                clearCartItems,
+                showOrderDetails,
+                handleOrderDetails,
+                handleOrderClose,
+                selectedOrder
+
             }}
         >
             {children}

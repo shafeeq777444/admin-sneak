@@ -2,10 +2,11 @@ import React, { useContext, useEffect, useState } from "react";
 import "./UserSection.css";
 import axios from "axios";
 import { CartContext } from "../../../context/CartContext";
-import UserDetails from "../../Modals/UserDetailsModal/UserDetails";
+import UserDetails from "../../Modals/UserDetails/UserDetails";
+import OrderDetails from "../../Modals/OrderDetails/OrderDetails";
 
 const UserSection = () => {
-    const { handleUserProfile, showUserDetails } = useContext(CartContext);
+    const { handleUserProfile, showUserDetails,showOrderDetails } = useContext(CartContext);
     const [usersData, setUsersData] = useState([]);
 
     useEffect(() => {
@@ -38,6 +39,7 @@ const UserSection = () => {
                 </tbody>
             </table>
             {showUserDetails && <UserDetails />}
+            {showOrderDetails && <OrderDetails/>}
         </div>
     );
 };
