@@ -1,15 +1,18 @@
 import { CartContext } from "../../../context/CartContext";
+import { DashBoardContext } from "../../../context/DashBoardContext";
 import OrderDetails from "../OrderDetails/OrderDetails";
 import "./UserDetails.css";
 import React, { useContext } from "react";
 
 const UserDetails = () => {
-    const { selectedUser, closeUserModal ,handleOrderDetails } = useContext(CartContext);
+    const { selectedUser, closeUserModal ,handleOrderDetails,toggleStatus } = useContext(CartContext);
+  
 
     return (
         <div className="user-details-modal-main-div">
             <div className="user-detail-moal-card">
                 <button className="close-button-use-details" onClick={closeUserModal}>x</button>
+                
                 <img className="user-detail-modal-img" src="/assets/extra/userProfile.jpg" alt="User Profile" />
                 {console.log(selectedUser, "checking")}
                 <div className="user-info">
@@ -38,6 +41,7 @@ const UserDetails = () => {
                         ))}
                     </tbody>
                 </table>
+                <button onClick={()=>toggleStatus(selectedUser)}  className="button-use-block" > {selectedUser.status === "active" ? "Active" : "Deactivate"}</button>
             </div>
             
         </div>

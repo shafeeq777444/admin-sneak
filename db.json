@@ -8,124 +8,47 @@
       "role": "admin"
     },
     {
-      "id": "6427",
-      "name": "shafeeq mohamed",
-      "email": "shafeeqmohamed111@gmail.com",
-      "password": "12344321",
-      "cpassword": "12344321",
-      "cart": [
-        {
-          "id": "7",
-          "name": "Nike Air Dunk",
-          "Description": "Dunk Jump Model",
-          "price": 8549,
-          "oldPrice": 15000,
-          "pic": [
-            "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png",
-            "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png"
-          ],
-          "sex": "male",
-          "productCode": "NAD001",
-          "quantity": 2
-        }
-      ],
-      "whishlist": [],
-      "order": [
-        {
-          "phoneNumber": "8606777444",
-          "address": "kochampally",
-          "pincode": "676102",
-          "upiId": "1234",
-          "orderId": 1728744605161,
-          "items": [
-            {
-              "id": "7",
-              "name": "Nike Air Dunk",
-              "Description": "Dunk Jump Model",
-              "price": 8549,
-              "oldPrice": 15000,
-              "pic": [
-                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png",
-                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png"
-              ],
-              "sex": "male",
-              "productCode": "NAD001",
-              "quantity": 1
-            },
-            {
-              "name": "Nike Air Max",
-              "Description": "Max Jump Model",
-              "price": 7549,
-              "oldPrice": 13500,
-              "pic": [
-                "/assets/men/NIKE+AIR+MAX+ISHOD.png",
-                "/assets/men/NIKE+AIR+MAX+ISHOD.png"
-              ],
-              "sex": "male",
-              "productCode": "NAM001",
-              "id": "8",
-              "quantity": 1
-            }
-          ],
-          "totalPrice": "16098.00"
-        }
-      ],
-      "orderSummary": []
-    },
-    {
-      "id": "468d",
-      "name": "hisham",
-      "email": "hisham@gmail.com",
-      "password": "12345",
-      "cpassword": "12345",
+      "id": "6189",
+      "name": "shahid",
+      "email": "shahid@gmail",
+      "password": "123321",
+      "cpassword": "123321",
+      "status": "active",
       "cart": [],
       "whishlist": [],
       "order": [
         {
           "phoneNumber": "8606777444",
-          "address": "kayal",
-          "pincode": "676199",
-          "upiId": "Qwe@123",
-          "orderId": 1728745946627,
+          "address": "kochampally",
+          "pincode": "676102",
+          "upiId": "1233",
+          "orderId": 1728891530961,
           "items": [
             {
-              "id": "7",
-              "name": "Nike Air Dunk",
-              "Description": "Dunk Jump Model",
-              "price": 8549,
-              "oldPrice": 15000,
+              "id": "16",
+              "name": "Nike Zoom Pegasus 37",
+              "Description": "The next generation of Pegasus",
+              "price": 9000,
+              "oldPrice": 13000,
               "pic": [
-                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png",
-                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png"
+                "/assets/women/zoom_pegasus_37.png",
+                "/assets/women/zoom_pegasus_37.png"
               ],
-              "sex": "male",
-              "productCode": "NAD001",
+              "sex": "female",
+              "productCode": "NZP001",
               "quantity": 1
             }
           ],
-          "totalPrice": "8549.00"
+          "totalPrice": "9000.00",
+          "orderDate": "Monday, 14/10/2024 13:08"
         },
         {
           "phoneNumber": "8606777444",
           "address": "kochampally",
           "pincode": "676102",
-          "upiId": "123231",
-          "orderId": 1728832116382,
+          "upiId": "12",
+          "orderId": 1728892114432,
           "items": [
-            {
-              "id": "7",
-              "name": "Nike Air Dunk",
-              "Description": "Dunk Jump Model",
-              "price": 8549,
-              "oldPrice": 15000,
-              "pic": [
-                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png",
-                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png"
-              ],
-              "sex": "male",
-              "productCode": "NAD001",
-              "quantity": 1
-            },
             {
               "name": "Nike Air Max",
               "Description": "Max Jump Model",
@@ -141,7 +64,10 @@
               "quantity": 1
             }
           ],
-          "totalPrice": "16098.00"
+          "totalPrice": "7549.00",
+          "orderDate": "14/10/2024",
+          "orderDay": "Monday",
+          "orderTime": "13:18:34"
         }
       ],
       "orderSummary": []

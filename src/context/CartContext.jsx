@@ -8,6 +8,7 @@ export const CartProvider = ({ children }) => {
     const user = localStorage.getItem("user");
     const userData = user ? JSON.parse(user) : null;
     const userId = userData ? userData.id : null;
+    // const userStatus=userData? userData.status:null;
     const [cartItems, setCartItems] = useState([]);
     const [showUserDetails, setShowUserDetails] = useState(false);
     const [selectedUser, setSelectedUser] = useState(null);
@@ -15,7 +16,39 @@ export const CartProvider = ({ children }) => {
     const [upiId, setUpiId] = useState("");
     const [showOrderDetails,setShowOrderDetails]=useState(false);
     const [selectedOrder,setSelectedOrder]=useState(null)
+    
+
+    // // <=========== Current Date, day, and time ========================================>
+    //     const fetchDate=()=>{
+    const currentDate = new Date();
+    // const dateOptions = { 
+    //     day: '2-digit', 
+    //     month: '2-digit', 
+    //     year: 'numeric', 
+    //     weekday: 'long' 
+    // };
+    
+    // // Options for time formatting
+    // const timeOptions = { 
+    //     hour: '2-digit', 
+    //     minute: '2-digit', 
+    //     hour12: false 
+    // };
+    
+    // // Format date and time
+    // const formattedDate = currentDate.toLocaleDateString('en-GB', dateOptions);
+    // const formattedTime = currentDate.toLocaleTimeString('en-GB', timeOptions);
+    // const finalOutput = `${formattedDate} ${formattedTime}`;
+    // return finalOutput
+    //     }
 // <=========== new ========================================>
+    const toggleStatus= async (selectedUser)=>{
+const newStatus=selectedUser.status=="active"?"deactive":"active";
+const response =await axios.patch(`http://localhost:5001/users/${selectedUser.id}`,{status:newStatus})
+setSelectedUser(pre=> ({...pre,status:newStatus}))
+    }
+    
+
     const handleOrderClose=()=>{
         setShowOrderDetails(false);
     }
@@ -29,7 +62,7 @@ export const CartProvider = ({ children }) => {
 
     // <=========== after Upi payment products and details saved to order array of db =========>
 
-    const orderedDetails = { ...userOrderDetails, upiId, orderId: Date.now(), items: [...cartItems],totalPrice:quantity.toFixed(2) };
+    const orderedDetails = { ...userOrderDetails, upiId, orderId: Date.now(), items: [...cartItems],totalPrice:quantity.toFixed(2),orderDate:currentDate.toLocaleDateString('en-GB'),orderDay:currentDate.toLocaleDateString('en-US', { weekday: 'long' }),orderTime:currentDate.toLocaleTimeString()};
     console.log(orderedDetails, "order details");
     const ordered = async () => {
         try {
@@ -157,7 +190,8 @@ export const CartProvider = ({ children }) => {
                 showOrderDetails,
                 handleOrderDetails,
                 handleOrderClose,
-                selectedOrder
+                selectedOrder,
+                toggleStatus
 
             }}
         >

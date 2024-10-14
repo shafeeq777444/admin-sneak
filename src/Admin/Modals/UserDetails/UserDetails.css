@@ -52,7 +52,7 @@
     border-radius: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
-    margin-top: 0rem; /* Space above the button */
+    margin-bottom: 1rem; /* Space above the button */
     transition: background-color 0.3s; /* Smooth transition on hover */
 }
 
@@ -81,6 +81,18 @@
     background-color: rgb(255, 255, 255);
 }
 .user-order-data-head:hover{
+    cursor: pointer;
     background-color: rgb(179, 176, 173);
     
+}
+.button-use-block{
+    /* align-self: flex-start; */
+    padding: 0.2rem 6rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+}
+.button-use-block:hover{
+    background-color:#333;
 }

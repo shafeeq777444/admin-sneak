@@ -12,6 +12,7 @@ const Register = () => {
     email: "",
     password: "",
     cpassword: "",
+    status:"active",
     cart:[],
     whishlist:[],
     order:[],
@@ -24,7 +25,7 @@ const Register = () => {
   const handleSubmit = async (values) => {
     try {
       const response = await axios.post("http://localhost:5001/users", values);
-      navigate("/");
+      navigate("/login");
       console.log("Data submitted successfully:", response.data);
     } catch (error) {
       console.error("Error submitting data:", error);

@@ -17,11 +17,11 @@ import AdminSection from "./Admin/Components/adminSection/AdminSection.jsx";
 
 
 function App() {
-  return (
+  return (<Router>
 <DashBoardProvider>
     <ProductProvider>
     <CartProvider>
-      <Router>
+      
           <Routes>
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
@@ -42,10 +42,11 @@ function App() {
               </Route>
 
           </Routes>
-      </Router>
+      
       </CartProvider>
   </ProductProvider>
   </DashBoardProvider>
+  </Router>
   );
 }
 

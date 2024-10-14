@@ -21,21 +21,24 @@ const Login = () => {
       const users = response.data;
       console.log(users);
       const user = users.find(u => u.email === values.email && u.password === values.password);
-      if(user.role=="admin"){
-        
+      if(!user){
+        alert("Invalid email or password")
+      }
+      else if(user.role=="admin"){
+        localStorage.setItem("id","1")
         navigate("/admin");
+        sessionStorage.setItem("admin", JSON.stringify(user)); 
         window.location.reload()
 
       }
-      else if (user) {
-        localStorage.setItem("user", JSON.stringify(user)); 
-        navigate("/");
-        window.location.reload()
-        
+       else if (user && user.status=="active") {
+          localStorage.setItem("user", JSON.stringify(user)); 
+          navigate("/");
+          window.location.reload()
       } else {
-        alert("Invalid email or password");
+        alert("User not active");
       }
-    } catch (error) {
+    }catch (error) {
       console.log("Error fetching", error);
     } finally {
       console.log("Axios working completed");

@@ -12,6 +12,14 @@ const OrderDetails = () => {
             {/* Order Header Section */}
             <div className="invoice-header">
                 <h2 className="invoice-text">Invoice</h2>
+                <div className="invoice-date">
+   <b>{`Date: ${selectedOrder.orderDate}`}</b> 
+    <br />
+    {`Time: ${selectedOrder.orderTime}`}
+    <br />
+    {`Day: ${selectedOrder.orderDay} `}
+   
+</div>
                 <div className="selected-order-id">
                     <strong>Order ID:</strong> {selectedOrder.orderId}
                 </div>
@@ -46,20 +54,26 @@ const OrderDetails = () => {
             {/* Total Price and Other Info */}
             <div className="order-summary">
                 <div className="order-total-price">
-                    <strong>Total Price: </strong>{selectedOrder.totalPrice}
+                    <strong>Total Price: </strong>
+                    {selectedOrder.totalPrice}
                 </div>
                 <div className="order-phoneNumber">
-                    <strong>Phone Number: </strong>{selectedOrder.phoneNumber}
+                    <strong>Phone Number: </strong>
+                    {selectedOrder.phoneNumber}
                 </div>
                 <div className="order-address">
-                    <strong>Address: </strong>{selectedOrder.address}
+                    <strong>Address: </strong>
+                    {selectedOrder.address}
                 </div>
                 <div className="order-upi-id">
-                    <strong>UPI ID: </strong>{selectedOrder.upiId}
+                    <strong>UPI ID: </strong>
+                    {selectedOrder.upiId}
                 </div>
             </div>
 
-            <button className="close-order-button" onClick={handleOrderClose}>Close</button>
+            <button className="close-order-button" onClick={handleOrderClose}>
+                Close
+            </button>
         </div>
     );
 };

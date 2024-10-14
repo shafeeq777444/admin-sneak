@@ -8,6 +8,7 @@ const Profile = ({ handleProfile }) => {
     const { userData } = useContext(CartContext);
     const navigate = useNavigate();
     const [isVisible, setIsVisible] = useState(true);
+    
 
     // Function to hide the popup
     const hidePopup = () => {

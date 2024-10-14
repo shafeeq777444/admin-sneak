@@ -3,6 +3,8 @@ import './Chart.css'
 import { DashBoardContext } from '../../../context/DashBoardContext'
 const Chart = () => {
     const {totalSale}=useContext(DashBoardContext)
+    const adminid=JSON.parse(localStorage.getItem("id"))
+    if(adminid!==1){return null}
   return (
     <div className='chart-main-div' >
       <div className="total-sale">

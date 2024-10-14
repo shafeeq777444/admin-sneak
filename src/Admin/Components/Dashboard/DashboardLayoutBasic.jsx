@@ -33,6 +33,8 @@ export default function DashboardLayoutBasic() {
                 break;
         }
     };
+    const adminid=JSON.parse(localStorage.getItem("id"))
+    if(adminid!==1){return null}
 
     return (
         <BottomNavigation className="bottom-navigation-main" sx={{ width: 500 }} value={value} onChange={handleChange}>

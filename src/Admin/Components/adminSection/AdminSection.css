@@ -1,7 +1,104 @@
-.admin-section{
+.user-section-main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.admin-section {
+    background-color: #1e1e2f; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10rem;
+   
+  }
+  
+  .admin-section .loged-Admin-name,
+  .admin-section .loged-Admin-email {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  
+  .admin-section .loged-Admin-name {
+    color: #dcc9c3; /* Slightly orange text for contrast */
+  }
+  
+  .admin-section .loged-Admin-email {
+    color: #ffffff; /* Light teal for emails */
+  }
+  .admin-section-img{
+    width: 5rem;
+    align-self: center;
+    
+  }
+  .admin-table {
+    border-radius: 1rem;
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  .admin-table table {
+    
+    width: 100%;
+    border: 1px solid #1e0505;
+    background-color: #0d1118; /* Dark background for the table */
+    color: #e0e0e0; /* Light text color */
+  }
+  
+  .admin-table th, .admin-table td {
+    padding: 10px;
+    border: 1px solid #1f1414;
+    text-align: left;
+  }
+  
+  .admin-table th {
+    background-color: #0d1118; /* Darker background for headers */
+    color: #ffffff;
+     /* Light text for headers */
+  }
+  
+  .admin-table tr {
+    background-color: #04060a; /* Slightly darker color for alternating rows */
+  }
+  
+  .admin-table tr:hover {
+    background-color: #12161f; /* Highlight on hover */
+  }
+  
+  .admin-table td {
+    color: #fafafa; /* Light teal text for table data */
+   
+  }
+  .admins-head{
+    color: white;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-weight:800;
+    font-size: 3rem;
+  }
+  .admin-table{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    color: white;
-}
+    flex-direction: column;
+  }
+ .admin-btn{
+    padding: 0.3rem 0.4rem;
+    border-radius: 1rem;
+    width: 5rem;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  .admin-btn:hover{
+    
+    background-color:#1e050556;
+   
+
+  }
