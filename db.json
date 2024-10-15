@@ -68,6 +68,47 @@
           "orderDate": "14/10/2024",
           "orderDay": "Monday",
           "orderTime": "13:18:34"
+        },
+        {
+          "phoneNumber": "8606777444",
+          "address": "kochampally",
+          "pincode": "676102",
+          "upiId": "1123221",
+          "orderId": 1728904817570,
+          "items": [
+            {
+              "id": "7",
+              "name": "Nike Air Dunk",
+              "Description": "Dunk Jump Model",
+              "price": 8549,
+              "oldPrice": 15000,
+              "pic": [
+                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png",
+                "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png"
+              ],
+              "sex": "male",
+              "productCode": "NAD001",
+              "quantity": 1
+            },
+            {
+              "name": "Nike Air Max",
+              "Description": "Air MAa Sc",
+              "price": 2549,
+              "oldPrice": 6700,
+              "pic": [
+                "/assets/men/NIKE+AIR+MAX+SC.png",
+                "/assets/men/NIKE+AIR+MAX+SC.png"
+              ],
+              "sex": "male",
+              "productCode": "NAM003",
+              "id": "11",
+              "quantity": 1
+            }
+          ],
+          "totalPrice": "11098.00",
+          "orderDate": "14/10/2024",
+          "orderDay": "Monday",
+          "orderTime": "16:50:17"
         }
       ],
       "orderSummary": []
@@ -101,7 +142,6 @@
       "id": "6"
     },
     {
-      "id": "7",
       "name": "Nike Air Dunk",
       "Description": "Dunk Jump Model",
       "price": 8549,
@@ -111,7 +151,8 @@
         "/assets/men/NIKE+AIR+DUNK+LOW+JUMBO.png"
       ],
       "sex": "male",
-      "productCode": "NAD001"
+      "productCode": "NAD001",
+      "id": "7"
     },
     {
       "name": "Nike Air Max",
@@ -203,19 +244,6 @@
       ],
       "sex": "female",
       "productCode": "NRIW001"
-    },
-    {
-      "id": "16",
-      "name": "Nike Zoom Pegasus 37",
-      "Description": "The next generation of Pegasus",
-      "price": 9000,
-      "oldPrice": 13000,
-      "pic": [
-        "/assets/women/zoom_pegasus_37.png",
-        "/assets/women/zoom_pegasus_37.png"
-      ],
-      "sex": "female",
-      "productCode": "NZP001"
     }
   ]
 }

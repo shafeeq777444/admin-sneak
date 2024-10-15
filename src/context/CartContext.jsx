@@ -19,28 +19,9 @@ export const CartProvider = ({ children }) => {
     
 
     // // <=========== Current Date, day, and time ========================================>
-    //     const fetchDate=()=>{
+
     const currentDate = new Date();
-    // const dateOptions = { 
-    //     day: '2-digit', 
-    //     month: '2-digit', 
-    //     year: 'numeric', 
-    //     weekday: 'long' 
-    // };
     
-    // // Options for time formatting
-    // const timeOptions = { 
-    //     hour: '2-digit', 
-    //     minute: '2-digit', 
-    //     hour12: false 
-    // };
-    
-    // // Format date and time
-    // const formattedDate = currentDate.toLocaleDateString('en-GB', dateOptions);
-    // const formattedTime = currentDate.toLocaleTimeString('en-GB', timeOptions);
-    // const finalOutput = `${formattedDate} ${formattedTime}`;
-    // return finalOutput
-    //     }
 // <=========== new ========================================>
     const toggleStatus= async (selectedUser)=>{
 const newStatus=selectedUser.status=="active"?"deactive":"active";
@@ -78,7 +59,6 @@ setSelectedUser(pre=> ({...pre,status:newStatus}))
             console.log(err);
         }}
  
-    // <=================================== cart-methods =======================================>
 
     // <=============== Cart Total Price =======================================>
     useEffect(() => {

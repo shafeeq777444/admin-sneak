@@ -7,23 +7,8 @@ const AdminSection = () => {
     const adminDetails=JSON.parse(sessionStorage.getItem("admin"))
 console.log(adminDetails);
   return (<div className='user-section-main-div'>
-    <div className='admin-section'>
-        <img className='admin-section-img' src='/assets/extra/Admin.png'></img>
-     <loged-admin-details>
-         <div className="loged-Admin-name">
-           Name: {adminDetails.name}
-         </div>
-         <div className="loged-Admin-email">
-           Email: {adminDetails.email}
-         </div>
-         <div className="loged-Admin-email">
-            Role: {adminDetails.role}
-         </div>
-     </loged-admin-details>
-     <button onClick={handleAdminLogout} className='admin-btn'>Logout</button>
-    </div>
     <div className="admin-table">
-    <h1 className='admins-head'>ADMINS</h1>
+    {/* <h1 className='admins-head'>ADMINS</h1> */}
       <table>
         
         <thead>
@@ -45,7 +30,23 @@ console.log(adminDetails);
           ))}
         </tbody>
       </table>
-    </div></div>
+    </div>
+    <div className='admin-section'>
+        <img className='admin-section-img' src='/assets/extra/Admin.png'></img>
+     <loged-admin-details>
+         <div className="loged-Admin-name">
+           Name: {adminDetails.name}
+         </div>
+         <div className="loged-Admin-email">
+           Email: {adminDetails.email}
+         </div>
+         <div className="loged-Admin-email">
+            Role: {adminDetails.role}
+         </div>
+     </loged-admin-details>
+     <button onClick={handleAdminLogout} className='admin-btn'>Logout</button>
+    </div>
+    </div>
   )
 }
 

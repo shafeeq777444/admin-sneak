@@ -1,5 +1,5 @@
 .user-section {
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: #131312; /* Background color */
     color: white; /* Text color */
 }
@@ -11,7 +11,7 @@
 }
 
 .table-heading {
-    background-color: #0d1118; /* Header background color */
+    background-color: #cf1111; /* Header background color */
 }
 
 .table-heading th {
@@ -20,15 +20,16 @@
 }
 
 .user-row {
-    background-color: #04060a; /* Row background color */
+    background-color: #ffffff; 
+    color: black;/* Row background color */
     cursor: pointer; /* Change cursor on hover */
 }
 
 .user-row:hover {
-    background-color: #12161f; /* Change color on hover */
+    background-color: #f5f4f4; /* Change color on hover */
 }
 
 .user-row td {
     padding: 1rem;
-    border-bottom: 1px solid #131312; /* Border between rows */
+    /* border-bottom: 1px solid #131312; Border between rows */
 }

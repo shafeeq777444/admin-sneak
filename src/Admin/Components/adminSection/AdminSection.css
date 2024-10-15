@@ -1,8 +1,9 @@
 .user-section-main-div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-color: rebeccapurple; */
 }
 .admin-section {
     background-color: #1e1e2f; /* Dark background */
@@ -14,7 +15,7 @@
     margin: 20px auto;
     display: flex;
     flex-direction: column;
-    margin: 10rem;
+    /* margin: 10rem; */
    
   }
   
@@ -38,42 +39,42 @@
     
   }
   .admin-table {
-    border-radius: 1rem;
-    width: 90%;
-    margin: 20px auto;
+    /* border-radius: 1rem; */
+    width: 100%;
+    /* margin: 20px ; */
     border-collapse: collapse;
   }
   
   .admin-table table {
     
     width: 100%;
-    border: 1px solid #1e0505;
+    /* border: 1px solid #1e0505; */
     background-color: #0d1118; /* Dark background for the table */
     color: #e0e0e0; /* Light text color */
   }
   
   .admin-table th, .admin-table td {
     padding: 10px;
-    border: 1px solid #1f1414;
+    /* border: 1px solid #1f1414; */
     text-align: left;
   }
   
   .admin-table th {
-    background-color: #0d1118; /* Darker background for headers */
+    background-color: #cf1111; /* Darker background for headers */
     color: #ffffff;
      /* Light text for headers */
   }
   
   .admin-table tr {
-    background-color: #04060a; /* Slightly darker color for alternating rows */
+    background-color: #ffffff; /* Slightly darker color for alternating rows */
   }
   
   .admin-table tr:hover {
-    background-color: #12161f; /* Highlight on hover */
+    background-color: #f5f4f4; /* Highlight on hover */
   }
   
   .admin-table td {
-    color: #fafafa; /* Light teal text for table data */
+    color: #000000; /* Light teal text for table data */
    
   }
   .admins-head{
@@ -102,3 +103,4 @@
    
 
   }
+  
